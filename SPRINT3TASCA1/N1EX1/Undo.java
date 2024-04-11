@@ -6,6 +6,7 @@ public class Undo {
     private static Undo instancia;
     private static ArrayList<String> tareas;
     private Undo() {
+
         tareas = new ArrayList<>();
     }
     public static Undo getInstance() {
@@ -15,6 +16,7 @@ public class Undo {
         return instancia;
     }
     public void guardarRequest(String request) {
+
         tareas.add(request);
     }
     public void eliminarUltimaRequest() {

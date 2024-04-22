@@ -61,7 +61,7 @@ public class Programa {
             try {
                 request = sc.nextLine();
                 acceptedInput = true;
-            } catch (Exception e) {
+            } catch (InputMismatchException e) {
                 System.out.println("Error");
                 sc.nextLine();
             }
